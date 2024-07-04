@@ -4,14 +4,14 @@ import { useRouter, usePathname } from "next/navigation";
 
 const Header = () => {
   return (
-    <Navbar>
-      <header>
-        <div className="flex gap-4 align-items-center border-bottom h-10 p-2 px-10 bg-orange-300">
+    <div className="flex justify-center">
+      <Navbar>
+        <div className="flex gap-4 align-center border-bottom h-10 p-2 px-10">
           <NavLink href={"/"} label={"Home"} />
           <NavLink href={"/products"} label={"Products"} />
         </div>
-      </header>
-    </Navbar>
+      </Navbar>
+    </div>
   );
 };
 

@@ -12,7 +12,12 @@ const NavLink = ({ label, href }: NavLinkProps) => {
   const isActive = (href: string) => pathname === href;
   return (
     <div>
-      <Link href={href} className={isActive(href) ? "bg-black text-white" : ""}>
+      <Link
+        href={href}
+        className={
+          isActive(href) ? "bg-blue-500 text-white rounded-md p-1" : ""
+        }
+      >
         {label}
       </Link>
     </div>
